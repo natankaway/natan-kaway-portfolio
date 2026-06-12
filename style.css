@@ -445,6 +445,10 @@ header.scrolled {
   color: var(--line-strong);
 }
 
+.mobile-nav-actions {
+  display: none;
+}
+
 /* Hamburger menu button for mobile */
 .menu-toggle-btn {
   display: none; /* Shown on mobile only */
@@ -1703,6 +1707,13 @@ body.loaded .hero-section .reveal-item {
   
   .nav-actions {
     display: none; /* Hidden behind hamburger */
+  }
+  
+  .mobile-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 110;
   }
   
   .menu-toggle-btn {
