@@ -163,12 +163,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Stagger delays for child nodes where helpful
   revealItems.forEach((item, index) => {
-    // Only apply IntersectionObserver reveals if CSS Scroll-driven animations are unsupported
-    // or if the element is inside the Hero section (which needs instant page load reveals)
+    // Hero items are animated immediately via CSS using the body.loaded class.
+    // Non-hero items are animated via CSS view-timeline (if supported) or fallback IntersectionObserver.
     const isInHero = item.closest('.hero-section') !== null;
     const supportsScrollDriven = CSS.supports('(animation-timeline: view()) and (animation-range: entry)');
     
-    if (isInHero || !supportsScrollDriven || isReducedMotion) {
+    if (!isInHero && (!supportsScrollDriven || isReducedMotion)) {
       revealObserver.observe(item);
     }
   });

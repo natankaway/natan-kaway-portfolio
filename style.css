@@ -1601,7 +1601,8 @@ footer {
   transition-delay: 0.1s;
 }
 
-.reveal-item.active {
+.reveal-item.active,
+body.loaded .hero-section .reveal-item {
   opacity: 1;
   transform: translateY(0);
 }
