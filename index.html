@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Natan Kaway — Product Engineer & Solo Builder</title>
+  <meta name="title" content="Natan Kaway — Product Engineer & Solo Builder">
+  <meta name="description" content="Product Engineer and solo builder creating complete mobile and web products, from architecture to launch preparation. Based in Rio de Janeiro, Brazil.">
+  <meta name="keywords" content="Natan Kaway, Product Engineer, Solo Builder, Full Stack, Flutter, React, Next.js, FastAPI, SQLite, Supabase, Rio de Janeiro, Brazil">
+  <meta name="author" content="Natan Kaway">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%23b7ab98'%3E◆%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/natankaway">
+  <meta property="og:title" content="Natan Kaway — Product Engineer & Solo Builder">
+  <meta property="og:description" content="Product Engineer and solo builder creating complete mobile and web products, from architecture to launch preparation. Based in Rio de Janeiro, Brazil.">
+  <meta property="og:image" content="https://github.com/natankaway.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Natan Kaway — Product Engineer & Solo Builder">
+  <meta property="twitter:description" content="Product Engineer and solo builder creating complete mobile and web products, from architecture to launch preparation. Based in Rio de Janeiro, Brazil.">
+  <meta property="twitter:image" content="https://github.com/natankaway.png">
+
+  <!-- Fontshare CDN for Clash Grotesk & Satoshi -->
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org Person JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Natan Kaway",
+    "jobTitle": "Product Engineer & Solo Builder",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rio de Janeiro",
+      "addressCountry": "Brazil"
+    },
+    "email": "natankaway@gmail.com",
+    "url": "https://github.com/natankaway",
+    "sameAs": [
+      "https://github.com/natankaway",
+      "https://www.linkedin.com/in/natankaway/",
+      "https://kplawy.app"
+    ]
+  }
+  </script>
+</head>
+<body class="loading">
+
+  <!-- Global Noise Texture -->
+  <div class="noise-overlay"></div>
+
+  <!-- Custom Cursor Elements (Desktop only) -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-container">
+        <a href="#" class="logo" aria-label="Natan Kaway Logo">
+          <span class="logo-mark">◆</span>
+          <span class="logo-text">Natan Kaway</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="#work" class="nav-link">
+            <span data-lang-en>Work</span>
+            <span data-lang-pt>Trabalho</span>
+          </a>
+          <a href="#services" class="nav-link">
+            <span data-lang-en>Services</span>
+            <span data-lang-pt>Serviços</span>
+          </a>
+          <a href="#principles" class="nav-link">
+            <span data-lang-en>Principles</span>
+            <span data-lang-pt>Princípios</span>
+          </a>
+          <a href="#stack" class="nav-link">
+            <span data-lang-en>Stack</span>
+            <span data-lang-pt>Tecnologias</span>
+          </a>
+          <a href="#contact" class="nav-link">
+            <span data-lang-en>Contact</span>
+            <span data-lang-pt>Contato</span>
+          </a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="lang-toggle-btn" aria-label="Toggle language">
+            <span class="lang-label" data-lang-val="en">EN</span>
+            <span class="lang-divider">/</span>
+            <span class="lang-label" data-lang-val="pt">PT</span>
+          </button>
+          
+          <a href="mailto:natankaway@gmail.com" class="btn btn-nav btn-outline cursor-trigger">
+            <span data-lang-en>Start a conversation</span>
+            <span data-lang-pt>Iniciar conversa</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="menu-toggle-btn cursor-trigger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-links">
+        <a href="#work" class="mobile-link">
+          <span data-lang-en>Work</span>
+          <span data-lang-pt>Trabalho</span>
+        </a>
+        <a href="#services" class="mobile-link">
+          <span data-lang-en>Services</span>
+          <span data-lang-pt>Serviços</span>
+        </a>
+        <a href="#principles" class="mobile-link">
+          <span data-lang-en>Principles</span>
+          <span data-lang-pt>Princípios</span>
+        </a>
+        <a href="#stack" class="mobile-link">
+          <span data-lang-en>Stack</span>
+          <span data-lang-pt>Tecnologias</span>
+        </a>
+        <a href="#contact" class="mobile-link">
+          <span data-lang-en>Contact</span>
+          <span data-lang-pt>Contato</span>
+        </a>
+      </div>
+      <div class="mobile-menu-footer">
+        <div class="mobile-lang-switch">
+          <span data-lang-en>Language:</span>
+          <span data-lang-pt>Idioma:</span>
+          <button class="lang-toggle-btn-mobile">
+            <span class="lang-label-mobile" data-lang-val="en">EN</span>
+            <span class="lang-divider">/</span>
+            <span class="lang-label-mobile" data-lang-val="pt">PT</span>
+          </button>
+        </div>
+        <a href="mailto:natankaway@gmail.com" class="btn btn-full btn-outline">
+          <span data-lang-en>Start a conversation</span>
+          <span data-lang-pt>Iniciar conversa</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-grid container">
+        <div class="hero-left-column reveal-item">
+          <div class="hero-label-wrapper overflow-hidden">
+            <span class="hero-label">
+              <span data-lang-en>PRODUCT ENGINEER / SOLO BUILDER</span>
+              <span data-lang-pt>PRODUCT ENGINEER / SOLO BUILDER</span>
+            </span>
+          </div>
+          
+          <h1 class="hero-headline">
+            <span class="headline-line-wrapper overflow-hidden">
+              <span class="headline-line" data-lang-en>I build complete</span>
+              <span class="headline-line" data-lang-pt>Construo produtos</span>
+            </span>
+            <span class="headline-line-wrapper overflow-hidden">
+              <span class="headline-line" data-lang-en>digital products.</span>
+              <span class="headline-line" data-lang-pt>digitais completos.</span>
+            </span>
+          </h1>
+
+          <p class="hero-copy reveal-item" style="transition-delay: 0.3s;">
+            <span data-lang-en>Product Engineer and solo builder. I turn open problems into mobile apps, web products, backends, data systems, automation workflows, and launch-ready software.</span>
+            <span data-lang-pt>Product Engineer e solo builder. Transformo problemas em aberto em aplicativos móveis, produtos web, backends, sistemas de dados, fluxos de automação e software pronto para lançamento.</span>
+          </p>
+
+          <div class="hero-ctas reveal-item" style="transition-delay: 0.4s;">
+            <a href="#work" class="btn btn-solid cursor-trigger">
+              <span data-lang-en>See selected work</span>
+              <span data-lang-pt>Ver trabalhos</span>
+            </a>
+            <a href="mailto:natankaway@gmail.com" class="btn btn-outline cursor-trigger">
+              <span data-lang-en>Discuss a project</span>
+              <span data-lang-pt>Conversar sobre projeto</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right-column reveal-item" style="transition-delay: 0.2s;">
+          <!-- Badge Wrapper containing rotating badge -->
+          <div class="rotating-badge-wrapper cursor-trigger">
+            <!-- English Badge -->
+            <svg class="rotating-badge" viewBox="0 0 200 200" data-lang-en>
+              <defs>
+                <path id="circle-path-en" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+              </defs>
+              <text>
+                <textPath href="#circle-path-en">AVAILABLE FOR SELECT PROJECTS • REMOTE INTERNATIONAL CONTRACTS •</textPath>
+              </text>
+              <circle cx="100" cy="100" r="32" class="badge-center-circle" />
+              <!-- Downward arrow -->
+              <path d="M 100, 88 L 100, 112 M 92, 104 L 100, 112 L 108, 104" class="badge-arrow" />
+            </svg>
+
+            <!-- Portuguese Badge -->
+            <svg class="rotating-badge" viewBox="0 0 200 200" data-lang-pt>
+              <defs>
+                <path id="circle-path-pt" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+              </defs>
+              <text>
+                <textPath href="#circle-path-pt">DISPONÍVEL PARA PROJETOS SELECIONADOS • CONTRATOS REMOTOS •</textPath>
+              </text>
+              <circle cx="100" cy="100" r="32" class="badge-center-circle" />
+              <!-- Downward arrow -->
+              <path d="M 100, 88 L 100, 112 M 92, 104 L 100, 112 L 108, 104" class="badge-arrow" />
+            </svg>
+          </div>
+
+          <!-- Availability Details Panel -->
+          <div class="availability-panel">
+            <div class="panel-row">
+              <span class="panel-dot"></span>
+              <span class="panel-text">
+                <span data-lang-en>Available for remote international contracts</span>
+                <span data-lang-pt>Disponível para contratos internacionais remotos</span>
+              </span>
+            </div>
+            <div class="panel-row">
+              <span class="panel-text-secondary">
+                <span data-lang-en>Rio de Janeiro, Brazil · GMT−3</span>
+                <span data-lang-pt>Rio de Janeiro, Brasil · GMT−3</span>
+              </span>
+            </div>
+            <div class="panel-row">
+              <span class="panel-text-secondary">
+                <span data-lang-en>Portuguese native · Intermediate English</span>
+                <span data-lang-pt>Nativo em português · Inglês intermediário</span>
+              </span>
+            </div>
+            <div class="panel-row">
+              <span class="panel-text-secondary">
+                <span data-lang-en>Product work + consulting</span>
+                <span data-lang-pt>Trabalho de produto + consultoria</span>
+              </span>
+            </div>
+            <div class="panel-row">
+              <span class="panel-text-secondary">
+                <span data-lang-en>Remote only</span>
+                <span data-lang-pt>Apenas remoto</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Subtle Taupe Glow -->
+      <div class="radial-glow glow-hero"></div>
+    </section>
+
+    <!-- About / Positioning Section -->
+    <section class="about-section" id="about">
+      <div class="about-grid container">
+        <div class="about-left-column reveal-item">
+          <span class="section-index">01 / WHY ME</span>
+          <h2 class="section-title">
+            <span data-lang-en>One builder. Full product ownership.</span>
+            <span data-lang-pt>Um desenvolvedor. Propriedade total.</span>
+          </h2>
+        </div>
+
+        <div class="about-right-column reveal-item" style="transition-delay: 0.15s;">
+          <div class="about-paragraphs">
+            <p class="body-intro">
+              <span data-lang-en>Natan builds complete digital products across mobile, web, backend, data, integrations, automation, and launch preparation.</span>
+              <span data-lang-pt>Natan constrói produtos digitais completos passando por mobile, web, backend, dados, integrações, automação e preparação para lançamento.</span>
+            </p>
+            <p class="body-text">
+              <span data-lang-en>His advantage is reducing handoffs: he can understand the product problem, make architecture decisions, design usable flows, build the system, and prepare it for real-world use.</span>
+              <span data-lang-pt>Sua vantagem é eliminar intermediários: ele consegue entender o problema de produto, tomar decisões de arquitetura, desenhar fluxos usáveis, codificar o sistema e prepará-lo para o uso real.</span>
+            </p>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-item reveal-item" style="transition-delay: 0.2s;">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">
+                <span data-lang-en>Product Brands</span>
+                <span data-lang-pt>Marcas de Produto</span>
+              </span>
+            </div>
+            <div class="stat-item reveal-item" style="transition-delay: 0.25s;">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">
+                <span data-lang-en>Apps & Systems</span>
+                <span data-lang-pt>Apps & Sistemas</span>
+              </span>
+            </div>
+            <div class="stat-item reveal-item" style="transition-delay: 0.3s;">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">
+                <span data-lang-en>AI / Automation</span>
+                <span data-lang-pt>AI / Automação</span>
+              </span>
+            </div>
+            <div class="stat-item reveal-item" style="transition-delay: 0.35s;">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">
+                <span data-lang-en>Independent</span>
+                <span data-lang-pt>Autonomia</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="projects-section" id="work">
+      <div class="container project-header reveal-item">
+        <span class="section-index">02 / SELECTED WORK</span>
+        <h2 class="section-title">
+          <span data-lang-en>Products currently being built.</span>
+          <span data-lang-pt>Produtos sendo construídos.</span>
+        </h2>
+        <p class="section-subtitle">
+          <span data-lang-en>A curated selection of personal products and systems built end-to-end.</span>
+          <span data-lang-pt>Uma seleção curada de produtos pessoais e sistemas construídos de ponta a ponta.</span>
+        </p>
+      </div>
+
+      <!-- Asymmetrical Project Showcase -->
+      <div class="projects-list container">
+        
+        <!-- Project 1: KplaWY -->
+        <article class="project-card reveal-item">
+          <div class="project-card-grid">
+            <div class="project-left">
+              <div class="project-sticky-header">
+                <div class="project-meta">
+                  <span class="project-status">
+                    <span class="status-diamond"></span>
+                    <span data-lang-en>In development · Pre-launch</span>
+                    <span data-lang-pt>Em desenvolvimento · Pré-lançamento</span>
+                  </span>
+                </div>
+                <h3 class="project-name">KplaWY</h3>
+                <p class="project-tagline">
+                  <span data-lang-en>Instant replay for moments that already happened.</span>
+                  <span data-lang-pt>Replay instantâneo para momentos que já aconteceram.</span>
+                </p>
+                
+                <!-- Project Image Media Container -->
+                <div class="project-media-container cursor-trigger">
+                  <div class="project-media-visual media-kplawy">
+                    <div class="media-overlay-text">
+                      <span data-lang-en>View Project</span>
+                      <span data-lang-pt>Ver Projeto</span>
+                    </div>
+                    <img src="assets/kplawy.png" alt="KplaWY App Preview" class="project-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-right">
+              <p class="project-description">
+                <span data-lang-en>KplaWY is a mobile instant-replay product built around a circular video buffer. It is designed to let users recover the seconds before an important moment, using the phone or a smartwatch, without depending on an internet connection.</span>
+                <span data-lang-pt>O KplaWY é um produto de replay instantâneo móvel estruturado em torno de um buffer de vídeo circular. Ele foi projetado para permitir que os usuários recuperem os segundos anteriores a um momento importante, usando o celular ou um smartwatch, sem depender de conexão com a internet.</span>
+              </p>
+              
+              <div class="evidence-blocks">
+                <div class="evidence-block cursor-trigger">
+                  <h4 class="evidence-title">
+                    <span data-lang-en>Circular video buffer</span>
+                    <span data-lang-pt>Buffer de vídeo circular</span>
+                  </h4>
+                  <p class="evidence-desc">
+                    <span data-lang-en>Captures recent moments instead of starting after the action.</span>
+                    <span data-lang-pt>Captura momentos recentes em vez de iniciar após a ação.</span>
+                  </p>
+                </div>
+                
+                <div class="evidence-block cursor-trigger">
+                  <h4 class="evidence-title">
+                    <span data-lang-en>Apple Watch + Wear OS</span>
+                    <span data-lang-pt>Apple Watch + Wear OS</span>
+                  </h4>
+                  <p class="evidence-desc">
+                    <span data-lang-en>Remote replay trigger designed for use in motion.</span>
+                    <span data-lang-pt>Disparador de replay remoto projetado para uso em movimento.</span>
+                  </p>
+                </div>
+                
+                <div class="evidence-block cursor-trigger">
+                  <h4 class="evidence-title">
+                    <span data-lang-en>Offline + private</span>
+                    <span data-lang-pt>Offline + privado</span>
+                  </h4>
+                  <p class="evidence-desc">
+                    <span data-lang-en>Local operation and privacy by default.</span>
+                    <span data-lang-pt>Operação local e privacidade por padrão.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-tag">Flutter</span>
+                <span class="stack-tag">Dart</span>
+                <span class="stack-tag">Apple Watch</span>
+                <span class="stack-tag">Wear OS</span>
+                <span class="stack-tag">Offline-first</span>
+              </div>
+
+              <a href="https://kplawy.app" target="_blank" rel="noopener" class="project-link cursor-trigger">
+                <span class="link-label">kplawy.app</span>
+                <span class="link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Kaxa -->
+        <article class="project-card reveal-item">
+          <div class="project-card-grid">
+            <div class="project-left">
+              <div class="project-sticky-header">
+                <div class="project-meta">
+                  <span class="project-status">
+                    <span class="status-diamond"></span>
+                    <span data-lang-en>In Production · Live</span>
+                    <span data-lang-pt>Em Produção · Online</span>
+                  </span>
+                </div>
+                <h3 class="project-name">Kaxa</h3>
+                <p class="project-tagline">
+                  <span data-lang-en>Offline-first point of sale with WhatsApp integration.</span>
+                  <span data-lang-pt>Ponto de venda offline-first com integração ao WhatsApp.</span>
+                </p>
+
+                <!-- Project Image Media Container -->
+                <div class="project-media-container cursor-trigger">
+                  <div class="project-media-visual media-kaxa">
+                    <div class="media-overlay-text">
+                      <span data-lang-en>View Project</span>
+                      <span data-lang-pt>Ver Projeto</span>
+                    </div>
+                    <img src="assets/kaxa.png" alt="Kaxa POS Preview" class="project-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-right">
+              <p class="project-description">
+                <span data-lang-en>Kaxa is an installable PWA for sales and business operations. Its local-first architecture keeps the point of sale usable without connectivity and synchronizes data when the network returns.</span>
+                <span data-lang-pt>O Kaxa é um PWA instalável para vendas e operações comerciais. Sua arquitetura local-first mantém o ponto de venda utilizável sem conectividade e sincroniza os dados assim que a rede retorna.</span>
+              </p>
+              
+              <div class="evidence-blocks">
+                <div class="evidence-block cursor-trigger">
+                  <h4 class="evidence-title">
+                    <span data-lang-en>Operational POS</span>
+                    <span data-lang-pt>PDV Operacional</span>
+                  </h4>
+                  <p class="evidence-desc">
+                    <span data-lang-en>Sales, business workflows, and real operational modules.</span>
+                    <span data-lang-pt>Vendas, fluxos de negócios e módulos operacionais reais.</span>
+                  </p>
+                </div>
+                
+                <div class="evidence-block cursor-trigger">
+                  <h4 class="evidence-title">
+                    <span data-lang-en>SQLite + Sync</span>
+                    <span data-lang-pt>SQLite + Sync</span>
+                  </h4>
+                  <p class="evidence-desc">
+                    <span data-lang-en>Local operation with online synchronization.</span>
+                    <span data-lang-pt>Operação local com sincronização online.</span>
+                  </p>
+                </div>
+                
+                <div class="evidence-block cursor-trigger">
+                  <h4 class="evidence-title">
+                    <span data-lang-en>WhatsApp Integration</span>
+                    <span data-lang-pt>Integração WhatsApp</span>
+                  </h4>
+                  <p class="evidence-desc">
+                    <span data-lang-en>Messaging integrated into operational workflows using Baileys.</span>
+                    <span data-lang-pt>Mensagens integradas aos fluxos operacionais usando Baileys.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">Next.js</span>
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Drizzle ORM</span>
+                <span class="stack-tag">Supabase</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">SQLite</span>
+                <span class="stack-tag">PWA</span>
+              </div>
+
+              <a href="https://kaxa-pdv.vercel.app" target="_blank" rel="noopener" class="project-link cursor-trigger">
+                <span class="link-label">kaxa-pdv.vercel.app</span>
+                <span class="link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Vorx Finance -->
+        <article class="project-card reveal-item">
+          <div class="project-card-grid">
+            <div class="project-left">
+              <div class="project-sticky-header">
+                <div class="project-meta">
+                  <span class="project-status">
+                    <span class="status-diamond"></span>
+                    <span data-lang-en>In Production · Live</span>
+                    <span data-lang-pt>Em Produção · Online</span>
+                  </span>
+                </div>
+                <h3 class="project-name">Vorx Finance</h3>
+                <p class="project-tagline">
+                  <span data-lang-en>Personal finance decisions through forward-looking cash visibility.</span>
+                  <span data-lang-pt>Decisões financeiras pessoais através da visibilidade futura do caixa.</span>
+                </p>
+
+                <!-- Project Image Media Container -->
+                <div class="project-media-container cursor-trigger">
+                  <div class="project-media-visual media-vorx">
+                    <div class="media-overlay-text">
+                      <span data-lang-en>View Project</span>
+                      <span data-lang-pt>Ver Projeto</span>
+                    </div>
+                    <img src="assets/vorx.png" alt="Vorx Finance Dashboard Preview" class="project-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-right">
+              <p class="project-description">
+                <span data-lang-en>Vorx Finance is a personal finance dashboard focused on balance projections, burn rate, goals, budgets, and an integrated AI agent. The product turns financial records into a clearer view of what comes next.</span>
+                <span data-lang-pt>O Vorx Finance é um painel de finanças pessoais focado em projeções de saldo, burn rate, metas, orçamentos e um agente de IA integrado. O produto transforma registros financeiros em uma visão mais clara do futuro.</span>
+              </p>
+              
+              <div class="evidence-blocks">
+                <div class="evidence-block cursor-trigger">
+                  <h4 class="evidence-title">
+                    <span data-lang-en>Balance Projection</span>
+                    <span data-lang-pt>Projeção de Saldo</span>
+                  </h4>
+                  <p class="evidence-desc">
+                    <span data-lang-en>Forward-looking view of personal cash.</span>
+                    <span data-lang-pt>Visão futura do caixa pessoal.</span>
+                  </p>
+                </div>
+                
+                <div class="evidence-block cursor-trigger">
+                  <h4 class="evidence-title">
+                    <span data-lang-en>Burn Rate + Goals</span>
+                    <span data-lang-pt>Burn Rate + Metas</span>
+                  </h4>
+                  <p class="evidence-desc">
+                    <span data-lang-en>Connects current spending with planned outcomes.</span>
+                    <span data-lang-pt>Conecta os gastos atuais com os resultados planejados.</span>
+                  </p>
+                </div>
+                
+                <div class="evidence-block cursor-trigger">
+                  <h4 class="evidence-title">
+                    <span data-lang-en>Integrated AI Agent</span>
+                    <span data-lang-pt>Agente de IA Integrado</span>
+                  </h4>
+                  <p class="evidence-desc">
+                    <span data-lang-en>Assists with financial organization and interpretation.</span>
+                    <span data-lang-pt>Auxilia na organização e interpretação financeira.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-tag">FastAPI</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Vite</span>
+                <span class="stack-tag">TanStack Query</span>
+              </div>
+
+              <a href="https://site-vorx-finance.vercel.app" target="_blank" rel="noopener" class="project-link cursor-trigger">
+                <span class="link-label">site-vorx-finance.vercel.app</span>
+                <span class="link-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container services-header reveal-item">
+        <span class="section-index">03 / CAPABILITIES</span>
+        <h2 class="section-title">
+          <span data-lang-en>From first decision to working software.</span>
+          <span data-lang-pt>Da primeira decisão ao software rodando.</span>
+        </h2>
+        <p class="section-intro">
+          <span data-lang-en>I take on projects where ownership matters. The best fit is a product that needs someone to understand the problem, choose the architecture, and execute without constant handoffs.</span>
+          <span data-lang-pt>Assumo projetos onde a responsabilidade importa. O encaixe ideal é um produto que precisa de alguém para entender o problema, definir a arquitetura e executar sem ruídos de entrega.</span>
+        </p>
+      </div>
+
+      <!-- Services Rows -->
+      <div class="services-list container">
+        
+        <div class="service-row reveal-item cursor-trigger">
+          <div class="service-left">
+            <span class="service-num">01</span>
+            <h3 class="service-title">Mobile Applications</h3>
+          </div>
+          <div class="service-right">
+            <p class="service-desc">
+              <span data-lang-en>Flutter apps, mobile-first flows, local storage, and device integrations.</span>
+              <span data-lang-pt>Aplicativos em Flutter, fluxos mobile-first, armazenamento local e integrações com o hardware do dispositivo.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="service-row reveal-item cursor-trigger">
+          <div class="service-left">
+            <span class="service-num">02</span>
+            <h3 class="service-title">Web Products & PWAs</h3>
+          </div>
+          <div class="service-right">
+            <p class="service-desc">
+              <span data-lang-en>Operational systems, dashboards, SaaS products, and installable web apps.</span>
+              <span data-lang-pt>Sistemas operacionais, painéis, produtos SaaS e aplicativos web instaláveis e progressivos.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="service-row reveal-item cursor-trigger">
+          <div class="service-left">
+            <span class="service-num">03</span>
+            <h3 class="service-title">Backends & Data</h3>
+          </div>
+          <div class="service-right">
+            <p class="service-desc">
+              <span data-lang-en>APIs, authentication, PostgreSQL, SQLite, Supabase, and sync strategies.</span>
+              <span data-lang-pt>Desenho de APIs, fluxos de autenticação, PostgreSQL, SQLite, Supabase e estratégias robustas de sincronização de dados.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="service-row reveal-item cursor-trigger">
+          <div class="service-left">
+            <span class="service-num">04</span>
+            <h3 class="service-title">Product Landing Pages</h3>
+          </div>
+          <div class="service-right">
+            <p class="service-desc">
+              <span data-lang-en>Fast, focused pages that explain the product and convert the right audience.</span>
+              <span data-lang-pt>Páginas extremamente rápidas e focadas que explicam a essência do produto e convertem o público ideal.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="service-row reveal-item cursor-trigger">
+          <div class="service-left">
+            <span class="service-num">05</span>
+            <h3 class="service-title">Integrations & Automation</h3>
+          </div>
+          <div class="service-right">
+            <p class="service-desc">
+              <span data-lang-en>WhatsApp, third-party APIs, AI workflows, and operational automation.</span>
+              <span data-lang-pt>Integração de WhatsApp, conexões com APIs de terceiros, fluxos de inteligência artificial e automação operacional inteligente.</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Principles Section -->
+    <section class="principles-section" id="principles">
+      <div class="container principles-header reveal-item">
+        <span class="section-index">04 / PHILOSOPHY</span>
+        <h2 class="section-title">
+          <span data-lang-en>How I make product decisions.</span>
+          <span data-lang-pt>Como tomo decisões de produto.</span>
+        </h2>
+      </div>
+
+      <!-- Principles List -->
+      <div class="principles-list container">
+        
+        <div class="principle-row reveal-item">
+          <div class="principle-num">01</div>
+          <div class="principle-content">
+            <h3 class="principle-title">
+              <span data-lang-en>Offline-first when it matters.</span>
+              <span data-lang-pt>Offline-first quando realmente importa.</span>
+            </h3>
+            <p class="principle-desc">
+              <span data-lang-en>When connectivity is a real risk, the product continues locally and synchronizes when the network returns.</span>
+              <span data-lang-pt>Quando a conectividade representa um risco operacional, o produto deve continuar funcionando localmente e sincronizar de forma resiliente após o retorno da rede.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="principle-row reveal-item">
+          <div class="principle-num">02</div>
+          <div class="principle-content">
+            <h3 class="principle-title">
+              <span data-lang-en>Privacy by default.</span>
+              <span data-lang-pt>Privacidade por padrão.</span>
+            </h3>
+            <p class="principle-desc">
+              <span data-lang-en>Collect less, keep ownership clear, and avoid unnecessary telemetry or mandatory cloud uploads.</span>
+              <span data-lang-pt>Coletar apenas o necessário, manter as fronteiras de propriedade dos dados claras e evitar telemetrias supérfluas ou upload obrigatório para nuvem sem real necessidade.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="principle-row reveal-item">
+          <div class="principle-num">03</div>
+          <div class="principle-content">
+            <h3 class="principle-title">
+              <span data-lang-en>Short, usable cycles.</span>
+              <span data-lang-pt>Ciclos curtos e usáveis.</span>
+            </h3>
+            <p class="principle-desc">
+              <span data-lang-en>Ship a usable slice, validate assumptions early, and evolve based on real feedback.</span>
+              <span data-lang-pt>Entregar partes verdadeiramente utilizáveis do software, validar premissas de forma precoce no ciclo de vida e evoluir os fluxos com base em interações reais.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="principle-row reveal-item">
+          <div class="principle-num">04</div>
+          <div class="principle-content">
+            <h3 class="principle-title">
+              <span data-lang-en>Typed and testable.</span>
+              <span data-lang-pt>Tipado e testável.</span>
+            </h3>
+            <p class="principle-desc">
+              <span data-lang-en>Clear boundaries, useful types, focused tests, and code that remains understandable after the first release.</span>
+              <span data-lang-pt>Fronteiras de código bem definidas, tipos estáticos bem estruturados, suíte de testes focada e base de código que se mantém legível muito depois do primeiro deploy.</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Core Stack Section -->
+    <section class="stack-section" id="stack">
+      <div class="container stack-header reveal-item">
+        <span class="section-index">05 / TOOLKIT</span>
+        <h2 class="section-title">
+          <span data-lang-en>Tools chosen around the product.</span>
+          <span data-lang-pt>Ferramentas escolhidas ao redor do produto.</span>
+        </h2>
+      </div>
+
+      <!-- Refined Stack Cloud -->
+      <div class="stack-container container reveal-item">
+        <div class="stack-cloud">
+          <!-- Top 5 technologies highlighted -->
+          <span class="stack-pill highlight cursor-trigger">TypeScript</span>
+          <span class="stack-pill highlight cursor-trigger">Flutter</span>
+          <span class="stack-pill highlight cursor-trigger">Next.js</span>
+          <span class="stack-pill highlight cursor-trigger">React</span>
+          <span class="stack-pill highlight cursor-trigger">FastAPI</span>
+          
+          <span class="stack-pill cursor-trigger">Supabase</span>
+          <span class="stack-pill cursor-trigger">PostgreSQL</span>
+          <span class="stack-pill cursor-trigger">SQLite</span>
+          <span class="stack-pill cursor-trigger">Python</span>
+          <span class="stack-pill cursor-trigger">Dart</span>
+          <span class="stack-pill cursor-trigger">Drizzle ORM</span>
+          <span class="stack-pill cursor-trigger">TanStack Query</span>
+          <span class="stack-pill cursor-trigger">PWA</span>
+          <span class="stack-pill cursor-trigger">REST APIs</span>
+          <span class="stack-pill cursor-trigger">GitHub</span>
+          <span class="stack-pill cursor-trigger">AI Workflows</span>
+          <span class="stack-pill cursor-trigger">Automation</span>
+          <span class="stack-pill cursor-trigger">Offline-first Architecture</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confidential Consulting Section -->
+    <section class="confidential-section">
+      <div class="container reveal-item">
+        <div class="confidential-card">
+          <div class="confidential-label">
+            <span data-lang-en>PRIVATE CLIENT WORK</span>
+            <span data-lang-pt>TRABALHO PRIVADO DE CLIENTES</span>
+          </div>
+          <h3 class="confidential-title">
+            <span data-lang-en>Confidential consulting work.</span>
+            <span data-lang-pt>Trabalho de consultoria confidencial.</span>
+          </h3>
+          <p class="confidential-desc">
+            <span data-lang-en>I also build applications, web systems, and landing pages for clients whose names and project details remain confidential. The public work on this page demonstrates the same end-to-end approach I bring to those engagements.</span>
+            <span data-lang-pt>Também construo aplicativos, sistemas web e landing pages para clientes cujos nomes e detalhes do projeto permanecem confidenciais. O trabalho público nesta página demonstra a mesma abordagem de ponta a ponta que trago para esses projetos.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / Experience Section -->
+    <section class="trust-section">
+      <div class="container trust-grid-container reveal-item">
+        <div class="trust-grid">
+          
+          <div class="trust-item cursor-trigger">
+            <span class="trust-title">Mobile App Builds</span>
+            <span class="trust-line"></span>
+          </div>
+          
+          <div class="trust-item cursor-trigger">
+            <span class="trust-title">Web Systems</span>
+            <span class="trust-line"></span>
+          </div>
+          
+          <div class="trust-item cursor-trigger">
+            <span class="trust-title">Product Landing Pages</span>
+            <span class="trust-line"></span>
+          </div>
+          
+          <div class="trust-item cursor-trigger">
+            <span class="trust-title">AI Automation</span>
+            <span class="trust-line"></span>
+          </div>
+          
+          <div class="trust-item cursor-trigger">
+            <span class="trust-title">WhatsApp Integrations</span>
+            <span class="trust-line"></span>
+          </div>
+          
+          <div class="trust-item cursor-trigger">
+            <span class="trust-title">Offline-first Systems</span>
+            <span class="trust-line"></span>
+          </div>
+          
+          <div class="trust-item cursor-trigger">
+            <span class="trust-title">Financial Dashboards</span>
+            <span class="trust-line"></span>
+          </div>
+          
+          <div class="trust-item cursor-trigger">
+            <span class="trust-title">Sports Technology</span>
+            <span class="trust-line"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Building Philosophy (Testimonials Alternatives) -->
+    <section class="philosophy-section">
+      <div class="container reveal-item">
+        <span class="philosophy-label">
+          <span data-lang-en>BUILDING PHILOSOPHY</span>
+          <span data-lang-pt>FILOSOFIA DE CONSTRUÇÃO</span>
+        </span>
+        
+        <div class="philosophy-grid">
+          <blockquote class="philosophy-quote">
+            <p>
+              <span data-lang-en>“I care about products that keep working outside perfect conditions — bad internet, real users, unclear requirements, and changing business rules.”</span>
+              <span data-lang-pt>“Eu me importo com produtos que continuam funcionando fora de condições perfeitas — internet instável, usuários reais, requisitos incertos e regras de negócio mutáveis.”</span>
+            </p>
+          </blockquote>
+
+          <blockquote class="philosophy-quote">
+            <p>
+              <span data-lang-en>“The goal is not just to ship screens. The goal is to build a product structure that can survive the first real users.”</span>
+              <span data-lang-pt>“O objetivo não é apenas entregar telas. O objetivo é construir uma estrutura de produto robusta o suficiente para sobreviver aos primeiros usuários reais.”</span>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-container reveal-item">
+        <h2 class="contact-headline">
+          <span data-lang-en>Have a product that needs ownership?</span>
+          <span data-lang-pt>Tem um produto que precisa de responsabilidade?</span>
+        </h2>
+        
+        <p class="contact-copy">
+          <span data-lang-en>I am open to remote international contracts and consulting projects across mobile, web, and full-stack product development.</span>
+          <span data-lang-pt>Estou disponível para contratos internacionais remotos e projetos de consultoria focados no desenvolvimento mobile, web e produto full-stack.</span>
+        </p>
+
+        <div class="contact-ctas">
+          <a href="mailto:natankaway@gmail.com" class="btn btn-solid cursor-trigger">
+            <span data-lang-en>Email Natan</span>
+            <span data-lang-pt>Enviar e-mail</span>
+          </a>
+          <a href="#work" class="btn btn-outline cursor-trigger">
+            <span data-lang-en>View selected work</span>
+            <span data-lang-pt>Ver trabalhos</span>
+          </a>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:natankaway@gmail.com" class="contact-social-link cursor-trigger" target="_blank" rel="noopener">natankaway@gmail.com</a>
+          <a href="https://github.com/natankaway" class="contact-social-link cursor-trigger" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/natankaway/" class="contact-social-link cursor-trigger" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://kplawy.app" class="contact-social-link cursor-trigger" target="_blank" rel="noopener">KplaWY</a>
+        </div>
+      </div>
+      
+      <!-- Subtle final CTA radial glow -->
+      <div class="radial-glow glow-cta"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-copyright">&copy; 2026 Natan Kaway.</span>
+        <span class="footer-tagline">
+          <span data-lang-en>Built with precision, motion, and product ownership.</span>
+          <span data-lang-pt>Construído com precisão, movimento e propriedade do produto.</span>
+        </span>
+      </div>
+      <div class="footer-right">
+        <!-- Language switch in footer -->
+        <button class="footer-lang-toggle-btn lang-toggle-btn" aria-label="Toggle language">
+          <span class="lang-label" data-lang-val="en">English</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-label" data-lang-val="pt">Português</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>

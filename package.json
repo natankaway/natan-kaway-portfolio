@@ -1,0 +1,11 @@
+{
+  "name": "natan-kaway-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 8763"
+  },
+  "devDependencies": {
+    "vite": "^5.2.11"
+  }
+}
